@@ -1,3 +1,4 @@
+/* eslint-disable no-multi-str */
 /* eslint-disable @typescript-eslint/camelcase */
 /* eslint-disable import/first */
 
@@ -30,7 +31,7 @@ import App from '../App';
 const apiMock = new MockAdapter(api);
 
 const wait = (amount = 0): Promise<void> => {
-  return new Promise((resolve) => setTimeout(resolve, amount));
+  return new Promise(resolve => setTimeout(resolve, amount));
 };
 
 const actWait = async (amount = 0): Promise<void> => {

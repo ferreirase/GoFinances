@@ -1,6 +1,7 @@
+/* eslint-disable no-unused-expressions */
 import React from 'react';
 
-import { Link } from 'react-router-dom';
+import { Link, useRouteMatch } from 'react-router-dom';
 
 import { Container } from './styles';
 
@@ -10,17 +11,24 @@ interface HeaderProps {
   size?: 'small' | 'large';
 }
 
-const Header: React.FC<HeaderProps> = ({ size = 'large' }: HeaderProps) => (
-  <Container size={size}>
-    <header>
-      <img src={Logo} alt="GoFinances" />
-      <nav>
-        {
-          // Todo
-        }
-      </nav>
-    </header>
-  </Container>
-);
+const Header: React.FC<HeaderProps> = ({ size = 'large' }: HeaderProps) => {
+  const { url } = useRouteMatch();
+
+  return (
+    <Container size={size}>
+      <header>
+        <img src={Logo} alt="GoFinances" />
+        <nav>
+          <Link to="/" className={url === '/' ? 'activeLink' : ''}>
+            Listagem
+          </Link>
+          <Link to="/import" className={url === '/import' ? 'activeLink' : ''}>
+            Importar
+          </Link>
+        </nav>
+      </header>
+    </Container>
+  );
+};
 
 export default Header;

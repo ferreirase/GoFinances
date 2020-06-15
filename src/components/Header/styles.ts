@@ -32,5 +32,9 @@ export const Container = styled.div<ContainerProps>`
         }
       }
     }
+
+    .activeLink {
+      border-bottom: 2px #fd883f solid;
+    }
   }
 `;
