@@ -39,42 +39,17 @@ Abaixo, seguem algumas fotos e um GIF do template da aplicação:
 <img src="/assets/usage.GIF" height="500" width="1200">
 
 
-### Preparando o backend
+### :cd: Rodando a aplicação!
 
-Antes de tudo, para que seu frontend se conecte corretamente ao backend, vá até a pasta do seu `backend` e execute os comandos `yarn add cors` e depois `yarn add @types/cors -D`.
 
-Depois disso vá até o seu `app.ts` ainda no backend, e importe o `cors` e adicione `app.use(cors())` antes da linha que contém `app.use(routes)`;
 
-Além disso, tenha certeza que as informações da categoria, estão sendo retornadas junto com a transação do seu backend no formato como o seguinte:
-
-```json
-  teste de amor
-```
-
-Para isso, você pode utilizar a funcionalidade de eager loading do TypeORM, adicionando o seguinte na sua model de transactions:
-
-```js
-@ManyToOne(() => Category, category => category.transaction, { eager: true })
-@JoinColumn({ name: 'category_id' })
-category: Category;
-```
-
-Lembre também de fazer o mesmo na model de Category, mas referenciando a tabela de Transaction.
-
-```js
-@OneToMany(() => Transaction, transaction => transaction.category)
-transaction: Transaction;
-```
-
-### Layout da aplicação
-
-Essa aplicação possui um layout que você pode seguir para conseguir visualizar o seu funcionamento.
+### :triangular_ruler: Layout da aplicação
 
 O layout pode ser acessado através da página do Figma, no [seguinte link](https://www.figma.com/file/EgOhyj1Inz14dhWGVhRlhr/GoFinances?node-id=1%3A863).
 
 Você precisará uma conta (gratuita) no Figma pra inspecionar o layout e obter detalhes de cores, tamanhos, etc.
 
-### Funcionalidades da aplicação
+### :dart: Funcionalidades da aplicação
 
 Agora que você já está com o template clonado e pronto para continuar, você deve verificar os arquivos da pasta `src` e completar onde não possui código, com o código para atingir os objetivos de cada rota.
 
