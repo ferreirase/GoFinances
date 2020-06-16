@@ -89,6 +89,14 @@ Para esse projeto, temos os seguintes testes:
 
 - **`should be able to upload a file`**: Para que esse teste passe, a aplicação deve permitir que um arquivo seja enviado através do componente de drag-n-drop na página de `import`, e que seja possível exibir o nome do arquivo enviado para o input.
 
+## :memo: Tecnologias Utilizadas no Projeto
+
+| **Frontend**|**Backend**|
+|-------------|-----------|
+|   ReactJS   |  NodeJS   |
+
+
+
 ## :memo: Licença
 
 Esse projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE) para mais detalhes.
