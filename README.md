@@ -20,12 +20,6 @@
   </a>
 </p>
 
-<p align="center">
-  <a href="#ferreira-sobre-o-projeto">Sobre o projeto</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#calendar-entrega">Entrega</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#memo-licença">Licença</a>
-</p>
-
 ## :rocket: Sobre o projeto
 
 O GoFinances é aplicação de gestão de transações financeiras. Foi desenvolvida durante o Bootcamp da **[Rocketseat](https://rocketseat.com.br/)** e ainda passa por algumas alterações e adições de funcionalidades.
@@ -36,7 +30,13 @@ A aplicação aceita cadastro de transações de entrada e saída apenas importa
 
 ### :camera: Template da aplicação
 
-Abaixo, seguem algumas fotos do template da aplicação: 
+Abaixo, seguem algumas fotos e um GIF do template da aplicação:
+
+<img src="/assets/list.png" height="500" width="1200">
+
+<img src="/assets/import.png" height="500" width="1200">
+
+<img src="/assets/usage.GIF" height="500" width="1200">
 
 
 ### Preparando o backend
