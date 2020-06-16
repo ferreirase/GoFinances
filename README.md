@@ -22,7 +22,7 @@
 
 ## :rocket: Sobre o projeto
 
-O GoFinances é aplicação de gestão de transações financeiras. Foi desenvolvida durante o Bootcamp da **[Rocketseat](https://rocketseat.com.br/)** e ainda passa por algumas alterações e adições de funcionalidades.
+O **GoFinances** é aplicação de gestão de transações financeiras. Foi desenvolvida durante o Bootcamp da **[Rocketseat](https://rocketseat.com.br/)** e ainda passa por algumas alterações e adições de funcionalidades.
 A aplicação aceita cadastro de transações de entrada e saída apenas importando arquivos **[.CSV](https://rockcontent.com/blog/csv/#:~:text=Por%20defini%C3%A7%C3%A3o%2C%20CSV%20%C3%A9%20um,ou%20delimitados%20por%20uma%20v%C3%ADrgula.)**, gera novos registros no banco de dados e exibe a lista de transações cadastradas.
  
  A próxima funcionalidade implementada será um meio de cadastro manual das transações, via formulário.
@@ -73,6 +73,8 @@ Abaixo, seguem algumas fotos e um GIF do template da aplicação:
 
 ### :mag_right: Específicação dos testes
 
+**OBS:** *Antes de rodar os testes, crie um banco de dados com o nome **```database_tests```**.*
+
 Para rodar os testes da aplicação, tanto na pasta **`backend`** quanto na pasta **`frontend`**, basta abrir o terminal na raiz da pasta e rodar **"yarn test"** ou ainda **"npm run test"**.
 
 Em cada teste, tem uma breve descrição no que sua aplicação deve cumprir para que o teste passe.
@@ -91,10 +93,18 @@ Para esse projeto, temos os seguintes testes:
 
 ## :memo: Tecnologias Utilizadas no Projeto
 
-| **Frontend**|**Backend**|
-|-------------|-----------|
-|   ReactJS   |  NodeJS   |
-
+| **Frontend**| **Backend**|
+|-------------|----------- |
+|  *ReactJS*    | *NodeJS*   |
+|  *Axios* | *Express*    |
+|   *TypeScript*   | *TypeScript* |
+|   *Filesize*   | *TypeORM*    |
+|   *Jest*   | *Jest*       |
+|   *Styled Components*   | *PostgreSQL* |
+|   *Polished*   | *Multer*     |
+|   *History*   | *CSV-Parser* |
+|   *Eslint*   | *Eslint*     |
+|   *Prettier*   | *Prettier*   |
 
 
 ## :memo: Licença
@@ -104,5 +114,4 @@ Esse projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE) para ma
 ---
 
 ## :man: Author
-**_```Anderson Raphael Ferreira```
-[LinkedIn](https://www.linkedin.com/in/anderson-raphael-ferreira/)
+[**_```Anderson Raphael Ferreira```_**](https://www.linkedin.com/in/anderson-raphael-ferreira/)
